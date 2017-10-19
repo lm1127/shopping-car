@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="Content/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/reset.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/common.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/style.css">
+</head>
+<body ng-app="myApp">
+<div ng-include="'App/View/include/header.html'"></div>
+<section class="section">
+    <ui-view></ui-view>
+</section>
+<div ng-include="'App/View/include/footer.html'"></div>
+
+    <script type="text/javascript" src="Scripts/jquery/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="Scripts/angular/angular.min.js"></script>
+    <script type="text/javascript" src="Scripts/angular/angular-ui-router.min.js"></script>
+
+    <script type="text/javascript" src="App/app.js"></script>
+
+    <script type="text/javascript" src="App/Service/shopCarService.js"></script>
+
+    <script type="text/javascript" src="App/Controller/shopCarController.js"></script>
+
+    <script type="text/javascript" src="App/Directive/shopCarDirective.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<div class="goods">
+    <div class="title">
+        <input type="checkbox" id="{{item.checkbox}}">
+        <label for="{{item.checkbox}}"></label>
+        <span><i class="fa fa-bell"></i>{{item.title}} <i class="fa fa-chevron-right"></i></span>
+    </div>
+    <div class="buy">
+        <dl>
+            <b class="fa fa-remove remove"></b>
+            <dd class="btns">
+                <input type="checkbox" id="{{item.check}}">
+                <label for="{{item.check}}"></label>
+            </dd>
+            <dt>
+                <img ng-src={{item.src}} alt="">
+            </dt>
+            <dd class="content">
+                <p>
+                    <button>-</button><input type="text" value="1"><button>+</button>
+                </p>
+                <p>价格：￥{{item.price}}</p>
+            </dd>
+        </dl>
+    </div>
+</div>
